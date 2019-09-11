@@ -1,0 +1,46 @@
+adcionar bibliotecas
+
+inicio do metodo main
+	//criando variaveis para os dados de entrada
+	criar a variavel "matricula"
+	criar a variavel "nome"
+	criar a variavel "tempo_de_casa"
+	criar a variavel "mes_1"
+	criar a variavel "mes_2"
+	criar a variavel "mes_3"
+
+	//obtendo dados de entrada
+	solicitar matricula do vendedor e adcionar o valor digitado a variavel "matricula"
+	solicitar o nome do vendedor e adcionar o valor digitado a variavel "nome"
+	solicitar o tempo de casa do vendedor e adcionar o valor digitado a variavel "tempo_de_casa"
+	solicitar o valor do mes 1 e adcionar o valor digitado a variavel "mes_1"
+	solicitar o valor do mes 2 e adcionar o valor digitado a variavel "mes_2"
+	solicitar o valor do mes 3 e adcionar o valor digitado a variavel "mes_3"
+
+	criar a variavel "comissao_1"
+	criar a variavel "comissao_2"
+	criar a variavel "comissao_3"
+	criar a variavel "total_da_comissao"
+
+	//processando as entradas
+	inicio se
+	se tempo_de_casa >= 10 entao
+		"comissao_1" = "mes_1" * 0,1
+		"comissao_2" = "mes_2" * 0,12
+		"comissao_3" = "mes_3" * 0,15
+	senao 
+		"comissao_1" = "mes_1" * 0,1
+		"comissao_2" = "mes_2" * 0,1
+		"comissao_3" = "mes_3" * 0,1
+	fim se 
+
+	//calculando o total da comissao
+	"total_da_comissao" = "comissao_1" + "comissao_2" + "comissao_3"
+
+	//imprimindo os resultados encontrados
+	imprimir valor "comissao_1"
+	imprimir valor "comissao_2"
+	imprimir valor "comissao_3"
+	imprimir valor "total_da_comissao"
+
+fim do metodo main
